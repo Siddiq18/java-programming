@@ -13,8 +13,6 @@ public class pascal {
 
     public static void printPascalsTriangle(int n) {
         int[][] triangle = new int[n][n];
-
-        // Fill Pascal's Triangle
         for (int line = 0; line < n; line++) {
             for (int i = 0; i <= line; i++) {
                 if (i == 0 || i == line) {
@@ -25,13 +23,13 @@ public class pascal {
             }
         }
 
-        // Print Pascal's Triangle
+
         for (int line = 0; line < n; line++) {
-            // Print leading spaces
+
             for (int space = 0; space < n - line - 1; space++) {
                 System.out.print(" ");
             }
-            // Print the numbers in Pascal's Triangle
+        
             for (int i = 0; i <= line; i++) {
                 System.out.print(triangle[line][i] + " ");
             }
