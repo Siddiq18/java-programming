@@ -4,15 +4,11 @@ public class charpattern {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Get the character from the user
         System.out.print("Enter the character to be printed: ");
         char character = input.next().charAt(0);
 
-        // Get the maximum number of times the character should be printed in a row
         System.out.print("Max number of times printed: ");
         int maxTimes = input.nextInt();
-
-        // Print the pattern
         printPattern(character, maxTimes);
 
         input.close();
