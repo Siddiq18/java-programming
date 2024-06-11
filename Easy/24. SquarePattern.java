@@ -4,11 +4,9 @@ public class SquarePattern {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Get the number of rows from the user
         System.out.print("Enter the number of rows: ");
         int rows = input.nextInt();
 
-        // Print the pattern
         printPattern(rows);
 
         input.close();
